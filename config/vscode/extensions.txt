@@ -1,0 +1,8 @@
+  bierner.markdown-mermaid
+  gruntfuggly.todo-tree
+  intility.vscode-backstage
+  mhutchie.git-graph
+  openai.chatgpt
+  shardulm94.trailing-spaces
+  streetsidesoftware.code-spell-checker
+  vscodevim.vim

@@ -1,0 +1,47 @@
+{
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "editor.minimap.enabled": false,
+    "editor.mouseWheelZoom": true,
+    "terminal.integrated.scrollback": 9000,
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        },
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        },
+        {
+            "before": ["k", "j"],
+            "after": ["<Esc>"]
+        },
+        {
+            "before": ["<C-d>"],
+            "after": ["<Del>"],
+        },
+    ],
+    "todo-tree.general.tags": [
+        "BUG",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "NOTE",
+        "XXX",
+        "[ ]",
+        "[x]"
+    ],
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": true,
+        "scminput": false
+    },
+    "chat.mcp.gallery.enabled": true,
+    "files.autoSave": "onFocusChange",
+    "python.defaultInterpreterPath": "/opt/homebrew/bin/python3",
+    "explorer.confirmDragAndDrop": false,
+}
