@@ -119,7 +119,6 @@ install_mousejumputility() {
   log "==> [5] Install MouseJumpUtility (.zip -> .app)"
   local tmpdir
   tmpdir="$(mktemp -d)"
-  trap 'rm -rf "$tmpdir"' RETURN
 
   need_cmd curl
   need_cmd unzip
@@ -136,11 +135,13 @@ install_mousejumputility() {
 
   if [[ -d "/Applications/${MJU_APP_NAME}" ]]; then
     log "    Already installed: /Applications/${MJU_APP_NAME} (skip)"
+    rm -rf "$tmpdir"
     return 0
   fi
 
   log "    Copying to /Applications (requires sudo)..."
   sudo cp -R "$app_path" /Applications/
+  rm -rf "$tmpdir"
 
   log "    Installed: /Applications/${MJU_APP_NAME}"
   log "    NOTE: On first launch, Gatekeeper may block it (manual allow may be required)."

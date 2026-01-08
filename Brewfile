@@ -1,7 +1,3 @@
-tap "homebrew/bundle"
-tap "homebrew/core"
-tap "homebrew/cask"
-
 # --- CLI / Dev tools ---
 brew "gcc"
 brew "gh"
